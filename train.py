@@ -117,8 +117,8 @@ def get_data(trans_test='312'):
                                               pin_memory=pin_memory,
                                               shuffle=False,num_workers=nw)
 
-    print("using {} images for training, 0 images for validation, 0 images for testing.".format(train_num))
-                                                                                                  val_num)
+    print("using {} images for training, 0 images for validation, 0 images for testing.".format(train_num,
+                                                                                                  val_num,
                                                                                                   test_num))
 
 
@@ -127,8 +127,8 @@ BatchSize = 100
 V_size = 64
 T_size = 64
 train_doc = "train"
-# val_doc = "val"
-# test_doc = "test"
+val_doc = "val"
+test_doc = "test"
 
 nw = min([os.cpu_count(), BatchSize if BatchSize > 1 else 0, 6]) 
 print(f'Using {nw} dataloader workers every process.')
@@ -294,10 +294,7 @@ try:
 except NameError:
     suf = time.strftime("%m%d_%H%M%S", time.localtime())
     print(f"suf:{suf}")   
-if os.path.exists(f'./tmp/{img_title}/{suf}'):
-    print (f'Store: "./tmp/{img_title}/{suf}"')
-else:
-    # !mkdir -p ./tmp/{img_title}/{suf} 
+    
 iter_path = f'./tmp/{img_title}/{suf}/train_{img_title}_{suf}.pth'
 save_PATH = f'./tmp/{img_title}/{suf}/best_{img_title}_{suf}.pth'
 last_path = f'./tmp/{img_title}/{suf}/last_{img_title}_{suf}.pth'
