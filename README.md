@@ -1,8 +1,7 @@
 ### Medical_CBAM_ViT
 <h1>Leveraging Inductive Bias in ViT for Medical Image Diagnosis</a></h1>
 
-PyTorch official implementation of (Myunghak Lee, Wooseong Cho, Sungsik Kim, Jinkyu Kim, and Jaekoo Lee. "Distillation for High-Quality Knowledge
-Extraction via Explainable Oracle Approach" BMVC, 2023).
+PyTorch official implementation of (Jungmin Ha, Euihyun Yoon, Sungsik Kim, Jinkyu Kim, and Jaekoo Lee. "Leveraging Inductive Bias in ViT for Medical Image Diagnosis" BMVC, 2024).
 
 
 ## Description
