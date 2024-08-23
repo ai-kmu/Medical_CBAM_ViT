@@ -13,3 +13,10 @@ An overview of our proposed model. Built upon Vision Transformer, we use the fol
 
 ![스크린샷 2024-08-23 오후 2 13 05](https://github.com/user-attachments/assets/a6a36abd-a0ad-487a-b4fd-373a5982ded4)
 Comparison of classification and segmentation performance on various datasets. Note that scores in parenthesis represent results with the black-hat transform as preprocess- ing. Bold text indicates the best performance, while underlined text indicates the second-best performance among all models.
+
+## Requirements
+- PyTorch (> 1.2.0)
+- torchvision
+- numpy
+
+
